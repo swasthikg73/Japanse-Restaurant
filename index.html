@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./styles.css">
@@ -148,31 +148,29 @@
                 <h2 class="menu__text-1">寿 <br> 司</h2>
                 <h2 class="menu__text-2">拉 <br> 麺</h2>
 
-                <div class="menu__tabs">
-                    <div class="menu__buttons">
-                        <button class="menu_button">
+                <div class="menu__tabs swiper" thumbsSlider="">
+                    <div class="menu__buttons swiper-wrapper">
+                        <button class="menu_button swiper-slide">
                             <img src="./images/menu-btn-1.png" alt="image">
                             <span>Sushi</span>
                         </button>
 
-                        <button class="menu_button">
+                        <button class="menu_button swiper-slide">
                             <img src="./images/menu-btn-2.png" alt="image">
                             <span>Nigiri </span>
                         </button>
 
-                        <button class="menu_button">
+                        <button class="menu_button swiper-slide">
                             <img src="./images/menu-btn-3.png" alt="image">
                             <span>Ramen</span>
                         </button>
 
-
-                        <button class="menu_button">
+                        <button class="menu_button swiper-slide">
                             <img src="./images/menu-btn-4.png" alt="image">
                             <span>Udon</span>
                         </button>
 
-
-                        <button class="menu_button">
+                        <button class="menu_button swiper-slide">
                             <img src="./images/menu-btn-5.png" alt="image">
                             <span>Others</span>
                         </button>
@@ -180,10 +178,10 @@
                     </div>
                 </div>
 
-                <div class="menu__content">
-                    <div>
+                <div class="menu__content swiper">
+                    <div class="swiper-wrapper">
                         <!-- Menu cards 1-->
-                        <div class="menu__cards">
+                        <div class="menu__cards swiper-slide">
                             <article class="menu__card">
                                 <div class="menu__blob">
                                     <img src="./images/menu-shusi-1.png" alt="image" class="menu__img">
@@ -222,175 +220,174 @@
                                     <span class="menu__stock">10 available</span>
                                 </div>
                             </article>
+                        </div>
 
-                            <!-- Menu cards 2-->
-                            <div class="menu__cards">
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-nigiri-1.png" alt="image" class="menu__img">
-                                    </div>
+                        <!-- Menu cards 2-->
+                        <div class="menu__cards swiper-slide">
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-nigiri-1.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Tako Nigiri</h2>
+                                <h2 class="menu__name">Tako Nigiri</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-nigiri-2.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-nigiri-2.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name"> Amaebi Nigiri</h2>
+                                <h2 class="menu__name"> Amaebi Nigiri</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-nigiri-3.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-nigiri-3.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Sake Nigiri</h2>
+                                <h2 class="menu__name">Sake Nigiri</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
-                            </div>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
+                        </div>
 
-                            <!-- Menu cards 3-->
-                            <div class="menu__cards">
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-ramen-1.png" alt="image" class="menu__img">
-                                    </div>
+                        <!-- Menu cards 3-->
+                        <div class="menu__cards swiper-slide">
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-ramen-1.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Soja Ramen</h2>
+                                <h2 class="menu__name">Soja Ramen</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-ramen-2.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-ramen-2.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Tonkotsu Ramen</h2>
+                                <h2 class="menu__name">Tonkotsu Ramen</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-ramen-3.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-ramen-3.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Shoyu Ramen</h2>
+                                <h2 class="menu__name">Shoyu Ramen</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
-                            </div>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
+                        </div>
 
-                            <!-- Menu cards 4-->
-                            <div class="menu__cards">
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-udon-1.png" alt="image" class="menu__img">
-                                    </div>
+                        <!-- Menu cards 4-->
+                        <div class="menu__cards swiper-slide">
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-udon-1.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Nabemono Udon</h2>
+                                <h2 class="menu__name">Nabemono Udon</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-udon-2.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-udon-2.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Yaki Udon</h2>
+                                <h2 class="menu__name">Yaki Udon</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-udon-3.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-udon-3.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">kitsune Udon</h2>
+                                <h2 class="menu__name">kitsune Udon</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
-                            </div>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
+                        </div>
 
-                            <!-- Menu cards 5-->
-                            <div class="menu__cards">
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-other-1.png" alt="image" class="menu__img">
-                                    </div>
+                        <!-- Menu cards 5-->
+                        <div class="menu__cards swiper-slide">
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-other-1.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Dumpling</h2>
+                                <h2 class="menu__name">Dumpling</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-other-2.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-other-2.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Onigiri</h2>
+                                <h2 class="menu__name">Onigiri</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
 
-                                <article class="menu__card">
-                                    <div class="menu__blob">
-                                        <img src="./images/menu-other-3.png" alt="image" class="menu__img">
-                                    </div>
+                            <article class="menu__card">
+                                <div class="menu__blob">
+                                    <img src="./images/menu-other-3.png" alt="image" class="menu__img">
+                                </div>
 
-                                    <h2 class="menu__name">Sukiyaki</h2>
+                                <h2 class="menu__name">Sukiyaki</h2>
 
-                                    <div class="menu__info">
-                                        <h3 class="menu__price">$8.99</h3>
-                                        <span class="menu__stock">10 available</span>
-                                    </div>
-                                </article>
-                            </div>
-
+                                <div class="menu__info">
+                                    <h3 class="menu__price">$8.99</h3>
+                                    <span class="menu__stock">10 available</span>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -420,7 +417,7 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./script.js"></script>

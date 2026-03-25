@@ -40,6 +40,16 @@ window.addEventListener("scroll", scrollHeader);
 
 /*=============== SWIPER MENU ===============*/
 
+const swiperTabs = new Swiper(".menu__tabs", {
+  sliderPreview: "auto",
+});
+
+const swiperMenu = new Swiper(".menu__content", {
+  loop: true,
+  thumbs: {
+    swiper: swiperTabs,
+  },
+});
 /*=============== SHOW SCROLL UP ===============*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
