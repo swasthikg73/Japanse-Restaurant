@@ -239,7 +239,9 @@ img {
 }
 
 /* Active link */
-
+.active-link {
+    color: var(--first-color);
+}
 
 /*=============== HOME SECTION ===============*/
 
@@ -882,16 +884,90 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer {
+    padding-block: 2rem;
+}
 
+.footer__container {
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.footer__logo {
+    font: var(--font-semi-bold) var(--bigger-font-size) var(--second-font);
+    color: var(--first-color);
+    justify-self: center;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.footer__social-link {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    transition: color .4s;
+}
+
+.footer__social-link:hover {
+    color: var(--first-color);
+}
+
+.footer-copy {
+    font-size: var(--small-font-size);
+    margin-top: 3rem;
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(34, 32%, 75%);
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--first-color-alt);
+    height: 1rem;
+    ;
+}
 
 /*=============== SCROLL UP ===============*/
+.scroll-up {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 16px hsl(0, 0%, 0%, .15);
+    color: var(--title-color);
+    display: inline-flex;
+    padding: 6px;
+    font-size: 1.25rem;
+    border-radius: .25rem;
+    z-index: var(--z-tooltip);
+    transition: bottom 1s tranform 1s;
+}
 
+.scroll-up:hover {
+    /* transform: translateY(-.5rem); */
+    animation: scrollUp 1s ease-in-out infinite alternate;
+    /*alternate → goes up then down*/
+}
+
+@keyframes scrollUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-2rem);
+    }
+}
 
 /* Show Scroll Up */
-
+.show-scroll {
+    bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices <> */
@@ -1313,7 +1389,41 @@ img {
         padding: 1rem 1.5rem;
         font-size: var(--normal-font-size);
     }
+
+    .footer {
+        padding-top: 3rem;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__logo {
+        font-size: var(--h2-font-size);
+        justify-self: flex-start;
+    }
+
+    .footer__social {
+        order: 1;
+        justify-self: flex-end;
+    }
+
+    .footer-copy {
+        margin: 0;
+        padding-top: .5rem;
+    }
+
+    .scroll-up {
+        right: 3rem;
+    }
 }
 
 
 /* For 2K resolutions <> */
+
+@media screen and (width >=2048px) {
+
+    body {
+        zoom: 120%
+    }
+}

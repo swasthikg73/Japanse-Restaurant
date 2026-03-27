@@ -51,7 +51,39 @@ const swiperMenu = new Swiper(".menu__content", {
   },
 });
 /*=============== SHOW SCROLL UP ===============*/
+const scrollup = () => {
+  const scrollUp = document.getElementById("scroll-up");
+  //Add the .scroll-haeder class if the bottm scroll of the view port
+  this.scrollY >= 350
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
+};
+window.addEventListener("scroll", scrollup);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll("section[id]");
+//Link the ID of each section (section id="home") to each link (a href="home")
+//add activate the link with class .active_link
+
+const scrollActive = () => {
+  //We get the position by scrolling down
+  const scrollY = window.scrollY;
+
+  sections.forEach((section) => {
+    const id = section.id, //id of each section
+      top = section.offsetTop - 100,
+      height = section.offsetHeight,
+      link = document.querySelector(".nav__menu a[href*=" + id + "]"); //id nav link
+
+    if (!link) return;
+
+    link.classList.toggle(
+      "active-link",
+      scrollY >= top && scrollY <= top + height,
+    );
+  });
+};
+
+window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
